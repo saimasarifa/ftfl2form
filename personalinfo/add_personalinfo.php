@@ -5,7 +5,7 @@
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimu",
+    "lict@2",
     "students");
 
 $query = "INSERT INTO `students`.`personalinfo` (`ID`,

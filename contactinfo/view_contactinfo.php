@@ -1,13 +1,13 @@
 <?php
 
-$id = $_GET['ID'];
+$id = $_GET['id'];
 
 $link = mysqli_connect("localhost",
     "root",
-    "shimu",
+    "lict@2",
     "students");
 
-$query = "select * from personalinfo WHERE ID = $id";
+$query = "select * from contactinfo WHERE id = $id";
 
 $result = mysqli_query($link, $query);
 
@@ -16,4 +16,4 @@ $row = mysqli_fetch_assoc($result);
 print_r($row);
 ?>
 
-<a href="list_personalinfo.php">Go to Home</a>
+<a href="list_contactinfo.php">Go to Home</a>
