@@ -12,7 +12,7 @@ $query = "INSERT INTO `students`.`users` (`ID`,
 `first_name` ,
 `last_name`
 )
-VALUES ('$id'
+VALUES ('$id',
     '$firstName', '$lastName'
 )";
 
